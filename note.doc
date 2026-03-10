@@ -1,0 +1,25 @@
+import tensorflow as tf 
+#0d tensor 
+d0 = tf.ones((1,))
+ 
+ 1d tensor
+ d1 = tf.ones((2,))
+
+ 2d tensor
+ d2 = tf.ones((2,2))
+
+ 3d tensor
+ d3 = tf.ones((3, 3, 3))
+
+ #numpy methods
+ print(d3.numpy())
+
+ #constant
+ from tensorflow import constant
+ #define 2*3 constant
+ a = constant(3, shape=[2, 3])
+
+
+ #defining and initializing variables
+ a0 = tf.variable([1,2,3,4,5,6], dtypes=tf.float32)
+ a1 = tf.variable([1,2,3,4,5,6], dtypes=tf.int16)
