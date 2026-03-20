@@ -13,3 +13,10 @@ print(young_high - young_low)
 
 
 print(old_high - old_low)
+
+#difference in deafult predictions for young
+print(tf.keras.activations.sigmoid(young_high ).numpy() -tf.keras.activations.sigmoid(young_low).numpy())
+
+#difference in deafult predictions for old
+print(tf.keras.activations.sigmoid(old_high).numpy() - tf.keras.activations.sigmoid(old_low))
+
